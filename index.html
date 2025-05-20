@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="uft-8">
+        <title>占いサイト</title>
+        <link rel = "stylesheet" href="stylesheet.css">
+        <link rel= "stylesheet" href="css/all.css">
+        <!-- ↓Googleフォントの読み込み -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Yuji+Syuku&display=swap" rel="stylesheet">
+        <script src = uranai.js defer></script>
+    </head>
+
+    <body>
+    <audio id="bgm" src="さみしいおばけと東京の月_2.mp3" loop></audio>
+    <audio id="jojoquote" src="道というものは自分で切り開くものだ.mp3"></audio>
+    <div id="overlay"></div>
+        <header>
+            <div class="header-logo">
+                <i class="fa-regular fa-circle" style="color: #B197FC;"></i>
+                <p>占いサイト</p>
+                <!-- 占いサイトにカーソル合わせるかクリックしたときになんかtransitionつけてもおもろいかも -->
+                <i class="fa-regular fa-circle" style="color: #B197FC;"></i>
+            </div>
+        </header>
+
+        <div class="main"> 
+            <!-- 25%(ようこそ占いの部屋へ)、50％(リザルトと理由)、25%(占いボタン) display:flex;で三つの縦の箱を横並びにmain内に作る-->
+            <div class="container">
+                <!-- サイト開いたときにフェードインで、"ようこそ占いの部屋へ"、"あなたの運勢を占います"を表示
+                      @keyframeでアニメーションを作り、animationで要素に付与 -->
+                <h2 class="h2-1">ようこそ<br>占いの部屋へ</h2>                   
+                <h2 class="h2-2">あなたの運勢<br>占ってみませんか？</h2>
+            </div>
+            <div class="container2" id="container2">
+            <img id="jojo" src="jojo.webp">     
+                <!-- 上70%下30%の箱に分けてリザルトと理由 -->
+                <div class="result1" id="result-flex1">
+                    <h1 id="h1"></h1>
+                    <!-- リザルト部分 
+                          luckyとunluckyはJavaScriptで追加するので後で消す -->
+                </div>
+                <div class="result2" id="result-flex2">
+                    <h3 id="h3"></h3>
+                </div>
+            </div>
+            <div class="container">
+                <!-- ボタン要素 -->
+                <div class="button1"> 
+                    <button id="btn1">占う</button>
+                </div>
+                <div class="button1"> 
+                    <button id="btn2">占わない</button>
+                </div>
+            </div>
+            <footer>
+
+            </footer>    
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+</html>
