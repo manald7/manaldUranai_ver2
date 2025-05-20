@@ -43,6 +43,8 @@ button1.addEventListener(`click`, function() {
     // 基本的にHTML要素.style.プロパティ名 = `値`;でCSSのプロパティ書き換えれそう
     overlay.style.display = `block` ;
     document.getElementById(`container2`).style.visibility = `visible` ;
+    document.getElementById(`result-flex1`).style.display = `flex`;
+    document.getElementById(`result-flex2`).style.display = `flex`;
     // ↓2つもここでanimationプロパティ設定した方がいいかもしれない
     document.getElementById(`result-flex1`).classList.add(`slideInUp`);
     document.getElementById(`result-flex2`).classList.add(`slideInUp2`);

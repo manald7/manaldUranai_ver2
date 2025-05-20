@@ -154,7 +154,7 @@ h2 {
 .result1 {
   width: 100%;
   height: 70%;
-  display: flex;
+  display: none;
     justify-content: center;
     align-items: center;
   text-align: center;
@@ -195,7 +195,7 @@ h2 {
 .result2 {
   width: 100%;
   height: 30%;
-  display: flex;
+  display: none;
     justify-content: center;
     align-items: center;
   text-align: center;
