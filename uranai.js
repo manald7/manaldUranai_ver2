@@ -62,6 +62,7 @@ button1.addEventListener(`click`, function() {
 button2.addEventListener(`click`, function() {
     bgm.pause();
     overlay.style.display = `block` ;
+    document.getElementById(`container2`).style.visibility = `visible` ;
     result3.style.display = `block` ;
     result3.classList.add(`flipInY`);
     document.getElementById(`jojoquote`).volume = 0.03;
