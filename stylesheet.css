@@ -108,7 +108,7 @@ h2 {
   width: 50%;
   height: 100%;
   z-index: 20;
-  visibility: hidde; /* display:none;と違い非表示にはなるが存在は残る */
+  visibility: hidden; /* display:none;と違い非表示にはなるが存在は残る */
 }
 /* 画面を覆う薄暗い箱 */
 #overlay {
