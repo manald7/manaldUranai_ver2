@@ -117,7 +117,7 @@ header .header-logo i {
 /* メイン部分 */
 .main {
   padding: 150px 80px;
-  background-image: url("/assets/img/uranai_home.webp");
+  background-image: url("../assets/img/uranai_home.webp");
   background-size: cover;
   background-position: center; /* 画像をどのサイトのサイズでも中央表示 */
   background-repeat: no-repeat; /* 画像をループ表示しない */
